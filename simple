@@ -1,0 +1,14 @@
+import java.util.Scanner
+public static void main (String[] args) {
+   Scanner input = new Scanner(System.in);
+     System.out.print("Enter a celebrity name here: ");
+     String celeb1 = input.next();
+     System.out.print("Enter another here: ");
+     String celeb2 = input.next();
+     if (celeb1.compareTo(celeb2) < 0) {
+         System.out.print("The celebrities in alphabetical order are " + celeb1 + " " + celeb2);
+     }
+     else {
+         System.out.print("The celebrities in alphabetical order are " + celeb2 + " " + celeb1);
+     }
+}
